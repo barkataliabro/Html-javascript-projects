@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html javascript project</title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <h1>Logo</h1>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="#" class="link">Home</a></li>
+                <li><a href="#" class="link">Blog</a></li>
+                <li><a href="#" class="link">Services</a></li>
+                <li><a href="#" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn" id="Signbtn">Sign In</button>
+            <button class="btn" id="registerbtn">Sign up</button>
+        </div>
+    </nav>
+    <div id="full_from" class="form-box">
+        <div id="singup" class="register-container">
+            <div class="top">
+                <span>Have accoun? <a href="#" onclick="singup()">login</a></span>
+                <header>Sign Up </header>
+            </div>
+            <div class="two-forms">
+                <div class="input-field">   
+                    <input id="fName" type="text" class="input-field" placeholder="First Name">
+                </div>
+                <div class="input-field">
+                    <input id="lName" type="text" class="input-field" placeholder="Last Name">
+                </div>
+                <div class="input-field">
+                    <input  id="Email" class="input-field" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <input id="Password" type="text" class="input-field" placeholder="Password">
+                </div>
+                <div onclick="register()" class="input-box">
+                    <input type="submit" class="submit" value="Register">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="registercheck">
+                        <label for="registercheck">Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Terms & Conditions</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="login" class="form-box">
+            <div class="register-container">
+                <div class="top">
+                    <span>Have accoun? <a href="#" onclick="login()">Sign up</a></span>
+                    <span>Have accoun? <a href="#" onclick="Homepage()">Home</a></span>
+                    <header>Login </header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="First Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="Last Name">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <input type="text" class="input-field" placeholder="Password">
+                    </div>
+                    <div onclick="registers()" class="input-box" >
+                        <input id="button" type="submit" class="submit" value="Registers">
+                    </div>
+                    <div class="two-col">
+                        <div class="one">
+                            <input type="checkbox" id="login-box">
+                            <label for="login-box">Remember Me</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
